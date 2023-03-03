@@ -1,0 +1,78 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-white-dark: #F2F2F2;
+  --color-white-dark-hover: #EBEBEB;
+  --color-white-dark-active: #E5E5E5;
+  --color-grey-light: #EEEEEE;
+  --color-grey-dark: #333333;
+  --color-grey-click: #BDBBBC;
+  --color-brown: #766357;
+  --color-brown-hover: #604E43;
+  --color-brown-click: #503E33;
+  --color-blue: #81B3D2;
+  --color-blue-hover: #669EC0;
+  --color-blue-click: #5496BD;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'PT Sans', "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-grey-dark);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+h2 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--color-black);
+}
+h3 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+}
+a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--color-grey-click);
+  opacity: 0.3;
+}
+a:hover {
+  color: var(--color-blue);
+}
+/* WELCOME */
+.welcome {
+  height: 650px;
+}
+.welcome--bg {
+  height: 650px;
+  background-image: url(../img/background-sedona.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.img__welcome {
+  padding-top: 77px;
+}
+.img__gorgeous {
+  padding-top: 10px;
+}
+.img__sedona {
+  padding-top: 54px;
+}

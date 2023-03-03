@@ -7,8 +7,11 @@
     <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/152.png"><!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <header>
       <nav>
         <ul>
@@ -25,10 +28,15 @@
 
     <main>
       <section class="welcome">
-        <p><img src="img/welcome.svg" width="187.74" height="44.75"" alt="Welcome"></p>
+        <h1 class="visually-hidden">SEDONA</h1>
+        <div class="welcome--bg">
+            <p><img src="img/welcome.svg" class="img__welcome" width="187" height="44" alt="Welcome"></p>
+            <p><img src="img/to-the-gorgeous.svg" class="img__gorgeous" width="255" height="28" alt="-to the gorgeous-"></p>
+            <p><img src="img/sedona.png" class="img__sedona" width="456" alt="Logo Sedona" title="Because the Grand Canyon sucks"></p>
+        </div>
+        <!--<p><img src="img/welcome.svg" width="187.74" height="44.75"" alt="Welcome"></p>
         <p><img src="img/to-the-gorgeous.svg" width="255.95" height="28.8"" alt="-to the gorgeous-"></p>
-        <h1>SEDONA</h1>
-        <p><img src="https://via.placeholder.com/150x100" alt="Because the Grand Canyon sucks"></p>
+        <p><img src="https://via.placeholder.com/150x100" alt="Because the Grand Canyon sucks"></p>-->
       </section>
 
       <section class="about" id="information">
@@ -51,17 +59,23 @@
         <div class="detail-item">
           <ul>
             <li>
-              <p><img src="img/icon-1.svg" width="75" height="72" alt="Жильё"></p>
+              <p>
+                <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
+              </p>
               <h3>Жильё</h3>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li>
-              <p><img src="img/icon-2.svg" width="75" height="70" alt="Еда"></p>
+              <p>
+                <img src="img/icon-2.svg" width="75" height="70" alt="Еда">
+              </p>
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li>
-              <p><img src="img/icon-3.svg" width="64" height="77" alt="Сувениры"></p>
+              <p>
+                <img src="img/icon-3.svg" width="64" height="77" alt="Сувениры">
+              </p>
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </li>
