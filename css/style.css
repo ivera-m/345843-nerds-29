@@ -21,6 +21,16 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: var(--color-grey-dark);
+  background-color: var(--color-white);
+  text-transform: uppercase;
+}
+.page {
+  height: 100%;
+}
+.page-body {
+  display: grid;
+  grid-auto-rows: min-content 1fr min-content;
+  min-height: 100%;
 }
 .visually-hidden {
   position: absolute;
@@ -56,9 +66,33 @@ a:visited {
 a:hover {
   color: var(--color-blue);
 }
+.head li, .detail-item li, .social {
+  list-style-type: none;
+}
+
+
+/* head */
+.head {
+  width: 100%;
+  z-index: 1;
+}
+.head nav{
+  margin: 0 auto;
+  width: 1060px;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+.head ul, .head p {
+  margin: 0;
+  justify-self: center;
+}
 /* WELCOME */
 .welcome {
   height: 650px;
+  margin-top: -30px;
+
 }
 .welcome--bg {
   height: 650px;
@@ -75,4 +109,87 @@ a:hover {
 }
 .img__sedona {
   padding-top: 54px;
+}
+
+
+/* ABOUT */
+
+.about {
+  width: 100%;
+  display: block;
+  padding: 42px 0px 52px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+/* DETAIL-IMG */
+.detail-img-left {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  margin-bottom: 60px;
+}
+.detail-img-right {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+
+}
+.detail-img__block {
+  background-color: var(--color-blue);
+  padding: 47px 49px 54px;
+  text-align: center;
+  color: var(--color-white);
+}
+.detail-img__block p, .detail-img__block h3 {
+  margin: 0px;
+}
+
+/* DETAIL-ITEM */
+.detail-item {
+  width: 100%;
+}
+.detail-item ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 82px;
+}
+.detail-item li{
+  text-align: center;
+}
+.detail-item__details {
+  background-color: var(--color-grey-light);
+  padding: 47px 0px 54px;
+  margin-bottom: 58px;
+}
+
+/* search – Заинтерисовались */
+.search {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* FOOTER*/
+#map {
+  height: 590px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  margin: -120px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.footer div {
+  justify-self: center;
 }
