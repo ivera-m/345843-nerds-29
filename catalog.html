@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <title>Гостиницы</title>
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/152.png"><!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Гостиницы</title>
   </head>
-  <body>
-    <header>
+  <body class="page-body">
+    <header class="head">
       <nav>
         <ul>
           <li><a href="#information">Информация</a></li>
           <li><a href="#gallery">Фото и видео</a></li>
         </ul>
-        <p><a href="#"><img src="https://via.placeholder.com/150x100" alt="logo"></a></p>
+        <p><a href="#"><img src="img/logo.svg" width="138" height="70" alt="logo"></a></p>
         <ul>
           <li><a href="#map">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+          <li><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h1>Каталог</h1>
-      </section>
-      <section class="filter">
-        <h2>Сортировка</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+      <section class="catalod-promo promo--bg">
+        <h1 class="visually-hidden">Каталог</h1>
+        <h2 class="visually-hidden">Сортировка</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="container filter">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label><br/>
@@ -53,74 +55,83 @@
       </section>
 
       <section class="hotel">
-        <h2>Отели</h2>
-        <p><strong>Найдено: 3</strong></p>
-        <p>Сортировка:</p>
-        <ul>
-          <li><a>По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По рейтингу</a></li>
-          <li><a><img src="https://via.placeholder.com/150x100" alt="up"></a></li>
-          <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="down"></a></li>
-        </ul>
-        <ul>
-          <li>
+        <h2 class="visually-hidden">Отели</h2>
+        <div class="breadcrumbs container">
+          <p><strong>Найдено: 3</strong></p>
+          <p>Сортировка:</p>
+          <ul class="breadcrumbs-list">
+            <li><a>По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+            <li><a><img src="img/icon-up-dir.svg" alt="up"></a></li>
+            <li><a href="#"><img src="img/icon-down-dir.svg" alt="down"></a></li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <ul class="hotel-list">
+          <li class="hotel-item container">
             <div>
-              <img src="https://via.placeholder.com/150x100" alt="Amara Resort & Spa">
+              <img src="img/anons-amara-resort-spa.png" alt="Amara Resort & Spa">
             </div>
             <div>
-              <h3>Amara Resort & Spa</h3>
-              <p>Гостиница <span>От 4000 ₽</span></p>
-              <input type="submit" value="Подробнее">
-              <input type="submit" value="Забронировать">
+              <h3 class="hotel-title">Amara Resort & Spa</h3>
+              <p class="hotel-price">Гостиница <span>От 4000 ₽</span></p>
+              <input class="btn btn-blue" type="submit" value="Подробнее">
+              <input class="btn btn-brown" type="submit" value="Забронировать">
             </div>
             <div>
               <p>
-                <img src="https://via.placeholder.com/150x100" alt="star">
-                <img src="https://via.placeholder.com/150x100" alt="star">
-                <img src="https://via.placeholder.com/150x100" alt="star">
-                <img src="https://via.placeholder.com/150x100" alt="star">
+                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star">
               </p>
               <p>
                 Рейтинг: 8,5
               </p>
             </div>
           </li>
-          <li>
+        </ul>
+        <div class="line"></div>
+        <ul class="hotel-list">
+          <li class="hotel-item container">
             <div>
-              <img src="https://via.placeholder.com/150x100" alt="Desert Quail Inn">
+              <img src="img/anons-desert-quail-inn.png" alt="Desert Quail Inn">
             </div>
             <div>
-              <h3>Desert Quail Inn</h3>
-              <p>Мотель <span>От 3000 ₽</span></p>
-              <input type="submit" value="Подробнее">
-              <input type="submit" value="Забронировать">
+              <h3 class="hotel-title">Desert Quail Inn</h3>
+              <p class="hotel-price">Мотель <span>От 3000 ₽</span></p>
+              <input class="btn btn-blue" type="submit" value="Подробнее">
+              <input class="btn btn-brown" type="submit" value="Забронировать">
             </div>
             <div>
               <p>
-                <img src="https://via.placeholder.com/150x100" alt="star">
-                <img src="https://via.placeholder.com/150x100" alt="star">
-                <img src="https://via.placeholder.com/150x100" alt="star">
+                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star">
               </p>
               <p>
                 Рейтинг: 8,9
               </p>
             </div>
           </li>
-          <li>
+        </ul>
+        <div class="line"></div>
+        <ul class="hotel-list">
+          <li class="hotel-item container">
             <div>
-              <img src="https://via.placeholder.com/150x100" alt="Villas at Poco Diablo">
+              <img src="img/anons-villas-at-poco-diablo.png" alt="Villas at Poco Diablo">
             </div>
             <div>
-              <h3>Villas at Poco Diablo</h3>
-              <p>Апартаменты <span>От 2000 ₽</span></p>
-              <input type="submit" value="Подробнее">
-              <input type="submit" value="Забронировать">
+              <h3 class="hotel-title">Villas at Poco Diablo</h3>
+              <p class="hotel-price">Апартаменты <span>От 2000 ₽</span></p>
+              <input class="btn btn-blue" type="submit" value="Подробнее">
+              <input class="btn btn-brown" type="submit" value="Забронировать">
             </div>
             <div>
               <p>
-                <img src="https://via.placeholder.com/150x100" alt="star">
-                <img src="https://via.placeholder.com/150x100" alt="star">
+                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star">
               </p>
               <p>
                 Рейтинг: 9,2
@@ -128,24 +139,26 @@
             </div>
           </li>
         </ul>
+        <div class="line"></div>
       </section>
     </main>
 
-    <footer>
+
+    <footer class="footer footer-catalog">
       <div>
         <h3>#visitSEDONA</h3>
         <p><a href="tel:+78005558628">+7 800 555-86-28</a></p>
       </div>
       <div>
-        <ul>
-          <li><a href="https://twitter.com/" target="_blank" title="twitter"><img src="https://via.placeholder.com/150x100" alt="twitter" title="twitter"></a></li>
-          <li><a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="https://via.placeholder.com/150x100" alt="Facebook" title="Facebook"></a></li>
-          <li><a href="https://www.youtube.com/" target="_blank" title="YouTube"><img src="https://via.placeholder.com/150x100" alt="YouTube" title="YouTube"></a></li>
+        <ul class="social" style="background-color: #81B3D2;">
+          <li><a href="https://twitter.com/" target="_blank" title="twitter"><img src="img/twitter.svg" width="17" height="17" alt="Twitter" title="Twitter"></a></li>
+          <li><a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="img/facebook.svg" width="12" height="22" alt="Facebook" title="Facebook"></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" title="YouTube"><img src="img/youtube.svg" width="20" height="16" alt="YouTube" title="YouTube"></a></li>
         </ul>
       </div>
       <div>
-        <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="HTML Academy"><img src="https://via.placeholder.com/150x100" alt="html academy" title="html academy"></a></p>
+        <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="HTML Academy"><img src="img/logo_htmlacademy.svg" width="115" height="33" alt="html academy" title="html academy"></a></p>
       </div>
-    </footer>
+  </footer>
   </body>
 </html>
