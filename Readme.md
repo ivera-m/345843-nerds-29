@@ -1,6 +1,6 @@
-# Личный проект «Нёрдс»
+# Личный проект «SEDONA»
 
-* Студент: [Три Десятова](https://up.htmlacademy.ru/htmlcss/29/user/345843).
+* Студент: [OKuzminova](https://htmlacademy.ru/profile/id877035).
 * Наставник: `Неизвестно`.
 
 ---

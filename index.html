@@ -1,12 +1,145 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>SEDONA</title>
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/152.png"><!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="head">
+      <nav>
+        <ul class="head__menu">
+          <li><a href="#information">Информация</a></li>
+          <li><a href="#gallery">Фото и видео</a></li>
+        </ul>
+        <p><a href="#"><img src="img/logo.svg" width="138" height="70" alt="logo"></a></p>
+        <ul class="head__menu">
+          <li><a href="#map">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section class="welcome">
+        <h1 class="visually-hidden">SEDONA</h1>
+        <div class="welcome--bg">
+            <p><img src="img/welcome.svg" class="img__welcome" width="187" height="44" alt="Welcome"></p>
+            <p><img src="img/to-the-gorgeous.svg" class="img__gorgeous" width="255" height="28" alt="-to the gorgeous-"></p>
+            <p><img src="img/sedona.png" class="img__sedona" width="456" alt="Logo Sedona" title="Because the Grand Canyon sucks"></p>
+        </div>
+        <!--<p><img src="img/welcome.svg" width="187.74" height="44.75"" alt="Welcome"></p>
+        <p><img src="img/to-the-gorgeous.svg" width="255.95" height="28.8"" alt="-to the gorgeous-"></p>
+        <p><img src="https://via.placeholder.com/150x100" alt="Because the Grand Canyon sucks"></p>-->
+      </section>
+
+      <section class="about" id="information">
+        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+
+      <section class="detail" id="gallery">
+        <div class="detail-img-left">
+          <div class="detail-img__block">
+            <h3>Настоящий городок</h3>
+            <p class="detail-img__block--number">— №1 —</p>
+            <p>Седона — не аттракцион для туристов, там<br> течёт своя жизнь</p>
+          </div>
+          <div>
+            <img src="img/content-img-1.png" width="800" height="100%" alt="Настоящий городок">
+          </div>
+        </div>
+
+        <div class="detail-item">
+          <ul>
+            <li>
+              <p>
+                <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
+              </p>
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li>
+              <p>
+                <img src="img/icon-2.svg" width="75" height="70" alt="Еда">
+              </p>
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li>
+              <p>
+                <img src="img/icon-3.svg" width="64" height="77" alt="Сувениры">
+              </p>
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="detail-img-right">
+          <div>
+            <img src="img/content-img-2.png" width="800" height="100%" alt="Мост дьявола">
+          </div>
+          <div class="detail-img__block">
+            <h3>Там есть Мост дьявола</h3>
+            <p class="detail-img__block--number">— №2 —</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </div>
+
+        <div class="detail-item detail-item__grey">
+          <ul>
+            <li>
+              <h3>небольшая<br> площадь</h3>
+              <p>— №3 —</p>
+              <p>все достопримечательности находятся&nbsp;очень близко</p>
+            </li>
+            <li>
+              <h3>красивая<br> дорога</h3>
+              <p>— №4 —</p>
+              <p>ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
+            </li>
+            <li>
+              <h3>мало<br> туристов</h3>
+              <p>— №5 —</p>
+              <p>большинство едет в гранд каньон и&nbsp;толпится&nbsp;там</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="search">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button>ПОИСК ГОСТИНИЦЫ В седоне</button>
+      </section>
+
+      <section id="map">
+
+      </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+          <h3>#visitSEDONA</h3>
+          <p><a href="tel:+78005558628">+7 800 555-86-28</a></p>
+        </div>
+        <div>
+          <ul class="social">
+            <li><a href="https://twitter.com/" target="_blank" title="twitter"><img src="img/twitter.svg" width="17" height="17" alt="Twitter" title="Twitter"></a></li>
+            <li><a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="img/facebook.svg" width="12" height="22" alt="Facebook" title="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" title="YouTube"><img src="img/youtube.svg" width="20" height="16" alt="YouTube" title="YouTube"></a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="HTML Academy"><img src="img/logo_htmlacademy.svg" width="115" height="33" alt="html academy" title="html academy"></a></p>
+        </div>
+    </footer>
   </body>
 </html>
