@@ -297,7 +297,7 @@ a:hover {
   padding: 0;
   list-style-type: none;
 }
-.social li {
+.social a {
   background-color: var(--color-blue);
   width: 46px;
   height: 48px;
@@ -306,6 +306,17 @@ a:hover {
   justify-content: center;
   line-height: 0;
 }
+.social a:hover {
+  background-color: var(--color-blue-hover);
+}
+.social a:active {
+  background-color: var(--color-blue-click);
+}
+.social-button:active path {
+  fill: var(--color-white-dark-active);
+}
+
+
 .social a {
   margin: 0;
   padding: 0;
@@ -317,6 +328,12 @@ a:hover {
 }
 .footer__logo p:first-child {
   height: 26px;
+}
+.footer__link:hover path{
+  fill: var(--color-blue);
+}
+.footer__link:active path{
+  fill: var(--color-grey-click);
 }
 
 
@@ -339,19 +356,69 @@ a:hover {
   padding-bottom: 32px;
 
 }
+/* Filter */
 .filter__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0;
+  align-items: flex-start;
+  margin: 0 -10px;
   padding: 0;
 }
 .filter__item legend {
-  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+.filter__item:nth-child(3) legend {
+  padding-bottom: 15px;
+}
+.filter__item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 114px;
 }
 .filter__item:nth-child(3) {
-  text-align: right;
   margin-left: 211px;
+}
+.filter__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none; /* Свойство user-select определяет, может ли пользователь выбрать текст в элементе, для которого это свойство задано.*/
+  padding-left: 39px;
+}
+.filter__input-checkbox {
+
+}
+.filter__input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  left: 0px;
+  padding-top: 5px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter__input-checkbox:checked + label::before {
+  background-image: url(../img/checkbox-on.svg);
+}
+.filter__input-checkbox:disabled + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z' fill='%236A6A6A'/%3E%3C/svg%3E");
+}
+.filter__input-checkbox:disabled:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='27' height='23' viewBox='0 0 27 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z' fill='%236A6A6A'/%3E%3Cpath d='M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z' fill='%236A6A6A'/%3E%3C/svg%3E%0A");
+}
+
+label:hover {
+  color: var(--color-blue);
+}
+input:disabled + label {
+  color: var(--color-grey-click);
 }
 
 .catalod-promo fieldset {
@@ -363,6 +430,41 @@ a:hover {
   font-weight: bold;
   font-size: 16px;
 }
+.filter-cost {
+  display: flex;
+  width: 317px;
+  border: 2px solid var(--color-white);
+  padding: 5px 0;
+  margin: 0;
+}
+.filter-cost label{
+  padding: 0 5px 0 50px;
+}
+.filter-cost label:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  left: 150px;
+  padding-top: 5px;
+  background-image: url("data:image/svg+xml,%3Csvg width='2' height='22' viewBox='0 0 2 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='2' height='22' fill='white'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+input[type='text']{
+  color: var(--color-white);
+  border: none;
+  background: none;
+  width: 40px;
+}
+.filter-cost-0{
+  margin-right: 30px;
+}
+input[type='range'] {
+  width: 317px;
+  margin: 15px 0 20px;
+}
+
 
 /* breadcrumbs */
 .breadcrumbs {
@@ -398,8 +500,16 @@ a:hover {
 .breadcrumbs-list__filter a:active {
   color: var(--color-blue-click);
 }
+.breadcrumbs-list__button li{
+  width: 11px;
+  height: 10px;
+  background-color: red;
+}
 .breadcrumbs-list__button li:not(:last-child){
   padding-right: 12px;
+}
+.breadcrumbs-list__up {
+
 }
 /* hotel-list vs hotel-item */
 .hotel-list {
@@ -458,6 +568,32 @@ a:hover {
 .btn-blue {
   background-color: var(--color-blue);
 }
+.btn-blue:hover {
+  background-color: var(--color-blue-hover);
+}
+.btn-blue:active {
+  background-color: var(--color-blue-click);
+  color: rgba(255, 255, 255, 0.3);
+}
 .btn-brown {
   background-color: var(--color-brown);
+}
+.btn-brown:hover {
+  background-color: var(--color-brown-hover);
+}
+.btn-brown:active {
+  background-color: var(--color-brown-click);
+  color: rgba(255, 255, 255, 0.3);
+}
+.btn-white {
+  padding: 6px 36px;
+  background: none;
+  border: 2px solid var(--color-white);
+  border-radius: 2px;
+  font-weight: normal;
+  margin: 0 auto;
+}
+.btn-white:hover {
+  background-color: var(--color-white);
+  color: var(--color-grey-dark);
 }
