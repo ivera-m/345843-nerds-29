@@ -503,13 +503,16 @@ input[type='range'] {
 .breadcrumbs-list__button li{
   width: 11px;
   height: 10px;
-  background-color: red;
 }
 .breadcrumbs-list__button li:not(:last-child){
   padding-right: 12px;
 }
 .breadcrumbs-list__up {
-
+  background-image: url(../img/icon-up-dir.svg);
+  background-repeat: no-repeat;
+}
+.breadcrumbs-list__down {
+  background-image: url(../img/icon-down-dir.svg);
 }
 /* hotel-list vs hotel-item */
 .hotel-list {
@@ -554,6 +557,9 @@ input[type='range'] {
 .hotel-price__type {
   width: 116px;
 }
+.hotel-rating p {
+  text-align: right;
+}
 
 
 .btn {
@@ -597,3 +603,60 @@ input[type='range'] {
   background-color: var(--color-white);
   color: var(--color-grey-dark);
 }
+
+
+/* ФОРМА search*/
+.form-search {
+  width: 568px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.form-search legend {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0 auto;
+  padding: 29px 0 32px;
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  width: 100%;
+}
+.form-search legend:hover {
+  background-color: var(--color-brown-hover);
+}
+.form-search__item {
+
+}
+.form-search__grid {
+  margin: 0;
+  padding: 55px;
+  box-shadow: 0px 5px 10px 5px rgba(0, 1, 1, 0.15);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  'check-in check-in'
+  'check-out check-out'
+  'adult child'
+  'btn btn'
+  ;
+}
+.form-search__item:nth-child(1) {
+  grid-area: check-in;
+}
+.form-search__item:nth-child(2) {
+  grid-area: check-out;
+}
+.form-search__item:nth-child(3) {
+  grid-area: adult;
+}
+.form-search__item:nth-child(4) {
+  grid-area: child;
+}
+.form-search__item:nth-child(5) {
+  grid-area: btn;
+}
+
+
