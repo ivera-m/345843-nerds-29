@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form action="https://echo.htmlacademy.ru/courses" method="post" oninput="daysoutput.value=dayscount.value">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <div>
+          <input type="checkbox" id="check-pool" name="infrastructure" value="Бассейн" checked>
+          <label for="check-pool">Бассейн</label>
+        </div>
+        <div>
+          <input type="checkbox" id="check-parking" name="infrastructure" value="Парковка">
+          <label for="check-parking">Парковка</label>
+        </div>
+        <div>
+          <input type="checkbox" id="check-wi-fi" name="infrastructure" value="Wi-Fi">
+          <label>Wi-Fi</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <div>
+          <input type="checkbox" id="check-hotel" name="residential" value="Гостиница">
+          <label for="check-hotel">Гостиница</label>
+        </div>
+        <div>
+          <input type="checkbox" id="check-motel" name="residential" value="Мотель">
+          <label for="check-motel">Мотель</label>
+        </div>
+        <div>
+          <input type="checkbox" id="check-apartment" name="residential" value="Апартаменты">
+          <label for="check-apartment">Апартаменты</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Стоимость в сутки, ₽:</legend>
+        <label for="dayscount">От</label> <output name="daysoutput"></output><br>
+        <input type="range" id="dayscount" name="dayscount" min="1" max="14" step="1"><br>
+        <input type="submit" value="Забронировать">
+      </fieldset>
+    </form>
+  </body>
+</html>

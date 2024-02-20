@@ -168,24 +168,24 @@
         </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal visually-hidden">
       <h2 class="visually-hidden">Поиск гостинницы в Седоне</h2>
       <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
         <fieldset class="modal__form-item">
           <label>Дата&nbsp;заезда:</label>
-          <input type="date" placeholder="24 апреля 2017">
+          <input type="date" name="date" placeholder="24 апреля 2017" required>
         </fieldset>
         <fieldset class="modal__form-item">
           <label>Дата&nbsp;выезда:</label>
-          <input type="date" placeholder="24 апреля 2017">
+          <input type="date" name="date" placeholder="24 апреля 2017" required>
         </fieldset>
         <fieldset class="modal__form-item">
           <label>Взрослые:</label>
-          <input type="number">
+          <input type="number" min="1" max="10" step="1">
         </fieldset>
         <fieldset class="modal__form-item">
           <label>Дети:</label>
-          <input type="number">
+          <input type="number" min="0" max="10" step="1">
         </fieldset>
         <input class="btn btn-blue modal__form-item" type="submit" value="Найти">
       </form>

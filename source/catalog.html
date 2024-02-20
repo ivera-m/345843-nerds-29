@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
+    <a href="form.html">Форма</a>
+
     <header class="head">
       <nav>
         <ul class="head__menu">
@@ -29,7 +31,7 @@
       <section class="catalod-promo promo--bg">
         <h1 class="visually-hidden">Каталог</h1>
         <h2 class="visually-hidden">Сортировка</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post" class="container filter">
+        <form action="https://echo.htmlacademy.ru/" method="post" class="container filter" oninput="daysoutput.value=dayscount.value">
           <fieldset class="filter__item">
             <legend>Инфраструктура:</legend>
             <ul>
@@ -67,12 +69,10 @@
           <fieldset class="filter__item">
             <legend>Стоимость в сутки, ₽:</legend>
             <p class="filter-cost">
-              <label>От </label>
-              <input class="filter-cost-0" type="text" name="range-cost" value="0">
-              <label>До </label>
-              <input type="text" name="range-cost" value="3000">
+              <label for="daysoutput">От </label> <output name="daysoutput"></output>
+              <!-- <input class="filter-cost-0" type="text" name="range-cost" value="0"> -->
             </p>
-            <input type="range" id="cost" name="cost" min="0" max="3000" step="1">
+            <input type="range" id="daysoutput" name="daysoutput" min="0" max="3000" step="1">
             <input class="btn btn-white" type="submit" value="Показать">
           </fieldset>
         </form>
