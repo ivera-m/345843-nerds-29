@@ -13,7 +13,6 @@
   --color-blue: #81B3D2;
   --color-blue-hover: #669EC0;
   --color-blue-click: #5496BD;
-  --colot-grey-form: #A9A9A9;
 }
 body {
   margin: 0px;
@@ -658,98 +657,6 @@ input[type='range'] {
 }
 .form-search__item:nth-child(5) {
   grid-area: btn;
-}
-
-
-/*Модальное окно*/
-.modal {
-  position: fixed;
-  background-color: var(--color-white);
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 568px;
-  height: 395px;
-  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.5);
-}
-.modal__form {
-  padding: 55px 55px 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-  'checkin checkin checkin checkin'
-  'checkout checkout checkout checkout'
-  'adult adult child child'
-  'btn btn btn btn';
-}
-.modal__form-item:nth-child(1) {
-  grid-area: checkin;
-}
-.modal__form-item:nth-child(2) {
-  grid-area: checkout;
-}
-.modal__form-item:nth-child(3) {
-  grid-area: adult;
-}
-.modal__form-item:nth-child(4) {
-  grid-area: child;
-}
-.modal__form-item:nth-child(3) label {
-  display: block;
-}
-.modal__form-item:nth-child(3) input[type="number"],
-.modal__form-item:nth-child(4) input[type="number"]{
-  background-color: var(--color-white-dark);
-  border: none;
-  padding: 10px;
-  max-width: 114px;
-}
-
-.modal__form-item:nth-child(5) {
-  grid-area: btn;
-  text-align: center;
-  margin-top: 24px;
-  padding: 16px;
-  font-size: 21px;
-  line-height: 26px;
-}
-.modal__form fieldset {
-  border: none;
-  padding: 0;
-}
-.modal__form-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 29px;
-}
-.modal__form-item:last-child{
-  margin-bottom: 0px;
-}
-.modal__form-item label,
-.modal__form-item input[type="date"] {
-  color: var(--color-black);
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.modal__form-item label {
-  min-width: 100px;
-  padding-right: 10px;
-}
-.modal__form-item:nth-child(4) label {
-  min-width: 50px;
-  padding-left: 10px;
-  text-align: right;
-}
-.modal__form-item input[type="date"]{
-  width: 100%;
-  background-color: var(--color-white-dark);
-  border: none;
-  padding: 6px 13px;
 }
 
 
