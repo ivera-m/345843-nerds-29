@@ -140,7 +140,6 @@ a:hover {
   padding: 42px 0px 52px;
   margin: 0 auto;
   text-align: center;
-
 }
 
 /* DETAIL-IMG */
@@ -391,9 +390,6 @@ a:hover {
   user-select: none; /* Свойство user-select определяет, может ли пользователь выбрать текст в элементе, для которого это свойство задано.*/
   padding-left: 39px;
 }
-.filter__input-checkbox {
-
-}
 .filter__input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -627,9 +623,6 @@ input[type='range'] {
 }
 .form-search legend:hover {
   background-color: var(--color-brown-hover);
-}
-.form-search__item {
-
 }
 .form-search__grid {
   margin: 0;
