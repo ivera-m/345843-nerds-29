@@ -1,0 +1,45 @@
+.hotel-list {
+  padding: 0;
+}
+.line {
+  border-bottom: 1px solid @color-white-dark-active;
+}
+.hotel-item {
+  display: grid;
+  grid-template-columns: min-content 1fr max-content;
+  column-gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.hotel-item__description {
+  display: flex;
+  flex-direction: column;
+}
+.hotel-item__description h3 {
+  padding-bottom: 6px;
+}
+.hotel-item__description p{
+  margin: 0;
+  padding-bottom: 10px;
+}
+.hotel-item__description div {
+  margin: 0;
+}
+.hotel-title {
+  padding: 0;
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px;
+}
+.hotel-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+}
+.hotel-price__type {
+  width: 116px;
+}
+.hotel-rating p {
+  text-align: right;
+}

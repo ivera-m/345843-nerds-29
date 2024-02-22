@@ -1,0 +1,76 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, max-content);
+  grid-template-areas:
+  "title1 img1 img1"
+  "features1 features2 features3"
+  "img2 img2 title2"
+  "features4 features5 features6";
+  text-align: center;
+}
+.gallery__item1-title {
+  grid-area: title1;
+}
+.gallery__item2-img {
+  grid-area: img1;
+}
+.gallery__item3-features {
+  grid-area: features1;
+}
+.gallery__item4-features {
+  grid-area: features2;
+}
+.gallery__item5-features {
+  grid-area: features3;
+}
+.gallery__item6-img {
+  grid-area: img2;
+}
+.gallery__item7-title {
+  grid-area: title2;
+}
+.gallery__item8-features {
+  grid-area: features4;
+}
+.gallery__item9-features {
+  grid-area: features5;
+}
+.gallery__item10-features {
+  grid-area: features6;
+}
+
+.gallery__blue {
+  background-color: @color-blue;
+  color: @color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.padding(@top: 15px; @block: 0px; @bottom: 30px) {
+  padding: @top @block @bottom;
+}
+.gallery__text {
+  .padding();
+}
+.gallery__img {
+  width: 100%;
+  object-fit: cover;
+}
+.gallery__features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .padding(59px, 10px, 80px);
+}
+.gallery__features h3 {
+  .padding(30px);
+}
+.gallery__grey {
+  background-color: @color-grey-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .padding(43px, 40px, 62px);
+}
