@@ -13,15 +13,17 @@
   <body class="page-body">
 
     <header class="head">
-      <nav>
-        <ul class="head__menu">
-          <li><a href="#information">Информация</a></li>
-          <li><a href="#gallery">Фото и видео</a></li>
-        </ul>
-        <p><a href="#"><img src="img/logo.svg" width="138" height="70" alt="logo"></a></p>
-        <ul class="head__menu">
-          <li><a href="#map">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+      <nav class="container">
+        <ul class="head__nav">
+          <li class="head__nav-item"><a class="text-strong" href="#information">Информация</a></li>
+          <li class="head__nav-item"><a class="text-strong" href="#gallery">Фото и видео</a></li>
+          <li class="head__nav-item head__nav-img">
+            <a href="#">
+              <img class="" src="img/new-logo.png" height="84" width="101" alt="Logo City of Sedona">
+            </a>
+          </li>
+          <li class="head__nav-item"><a class="text-strong" href="#map">Форма отзыва</a></li>
+          <li class="head__nav-item"><a class="text-strong" href="catalog.html">HTML academy</a></li>
         </ul>
       </nav>
     </header>
@@ -29,92 +31,73 @@
     <main>
       <section class="welcome">
         <h1 class="visually-hidden">SEDONA</h1>
-        <div class="welcome--bg">
-            <p><img src="img/welcome.svg" class="img__welcome" width="187" height="44" alt="Welcome"></p>
-            <p><img src="img/to-the-gorgeous.svg" class="img__gorgeous" width="255" height="28" alt="-to the gorgeous-"></p>
-            <p><img src="img/sedona.png" class="img__sedona" width="456" alt="Logo Sedona" title="Because the Grand Canyon sucks"></p>
+        <div>
+            <p class="welcome__img"><img src="img/welcome.svg" width="187" height="44" alt="Welcome"></p>
+            <p class="welcome__img-gorgeous"><img src="img/to-the-gorgeous.svg" width="255" height="28" alt="to the gorgeous"></p>
+            <p class="welcome__img-sedona"><img src="img/sedona.svg" width="460" height="80" alt="Sedona"></p>
+            <p class="welcome__img-reason"><img src="img/reason-sedona.svg" width="293" height="79" alt="Logo Sedona" title="Because the Grand Canyon sucks"></p>
         </div>
+        <div class="welcome__img-triangle"></div>
       </section>
 
-      <section class="about" id="information">
+      <section class="information" id="information">
         <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="information__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
 
-      <section class="detail" id="gallery">
-        <div class="detail-img-left">
-          <div class="detail-img__block">
-            <h3>Настоящий городок</h3>
-            <p class="detail-img__block--number">— №1 —</p>
-            <p>Седона — не аттракцион для туристов, там<br> течёт своя жизнь</p>
-          </div>
-          <div>
-            <img src="img/content-img-1.png" width="800" height="100%" alt="Настоящий городок">
-          </div>
+      <section class="gallery" id="gallery">
+        <div class="gallery__item1-title gallery__blue">
+          <h3>Настоящий<br> городок</h3>
+          <p class="gallery__text">— №1 —</p>
+          <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
         </div>
-
-        <div class="detail-item">
-          <ul>
-            <li>
-              <p>
-                <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
-              </p>
-              <h3>Жильё</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li>
-              <p>
-                <img src="img/icon-2.svg" width="75" height="70" alt="Еда">
-              </p>
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li>
-              <p>
-                <img src="img/icon-3.svg" width="64" height="77" alt="Сувениры">
-              </p>
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
+        <div class="gallery__item2-img">
+          <img class="gallery__img" src="img/content-img-1.png" width="800" height="100%" alt="Настоящий городок">
         </div>
-
-        <div class="detail-img-right">
-          <div>
-            <img src="img/content-img-2.png" width="800" height="100%" alt="Мост дьявола">
-          </div>
-          <div class="detail-img__block">
-            <h3>Там есть Мост дьявола</h3>
-            <p class="detail-img__block--number">— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
+        <div class="gallery__item3-features gallery__features">
+          <p><img src="img/icon-1.svg" width="75" height="72" alt="Жилье"></p>
+          <h3>Жилье</h3>
+          <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
         </div>
-
-        <div class="detail-item detail-item__grey">
-          <ul>
-            <li>
-              <h3>небольшая<br> площадь</h3>
-              <p>— №3 —</p>
-              <p>все достопримечательности находятся&nbsp;очень близко</p>
-            </li>
-            <li>
-              <h3>красивая<br> дорога</h3>
-              <p>— №4 —</p>
-              <p>ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
-            </li>
-            <li>
-              <h3>мало<br> туристов</h3>
-              <p>— №5 —</p>
-              <p>большинство едет в гранд каньон и&nbsp;толпится&nbsp;там</p>
-            </li>
-          </ul>
+        <div class="gallery__item4-features gallery__features">
+          <p><img src="img/icon-2.svg" width="75" height="70" alt="Еда"></p>
+          <h3>Еда</h3>
+          <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+        </div>
+        <div class="gallery__item5-features gallery__features">
+          <p><img src="img/icon-3.svg" width="64" height="77" alt="Сувениры"></p>
+          <h3>Сувениры</h3>
+          <p>Не только китайского,<br> но и местного производства!</p>
+        </div>
+        <div class="gallery__item6-img">
+          <img class="gallery__img" src="img/content-img-2.png" width="800" height="100%" alt="Мост дьявола">
+        </div>
+        <div class="gallery__item7-title gallery__blue">
+          <h3>Там есть<br> Мост дьявола</h3>
+          <p class="gallery__text">— №2 —</p>
+          <p>Да, по нему можно пройти!<br> Если конечно вы осмелитесь</p>
+        </div>
+        <div class="gallery__item8-features gallery__grey">
+          <h3>Небольшая<br> площадь</h3>
+          <p class="gallery__text">— №3 —</p>
+          <p>Все достопримечательности находятся&nbsp;очень близко</p>
+        </div>
+        <div class="gallery__item9-features gallery__grey">
+          <h3>Красивая<br> дорога</h3>
+          <p class="gallery__text">— №4 —</p>
+          <p>Ехать в седону из лас-вегаса совсем не&nbsp;скучно!</p>
+        </div>
+        <div class="gallery__item10-features  gallery__grey">
+          <h3>Мало<br> туристов</h3>
+          <p class="gallery__text">— №5 —</p>
+          <p>Большинство едет в гранд каньон и&nbsp;толпится&nbsp;там</p>
         </div>
       </section>
 
-      <section class="search">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button>ПОИСК ГОСТИНИЦЫ В седоне</button>
+      <section class="information">
+        <h2 class="information__title">Заинтересовались?</h2>
+        <p class="information__subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="btn btn-blue">НАЙТИ гостиницу</button>
       </section>
 
       <section id="map">
