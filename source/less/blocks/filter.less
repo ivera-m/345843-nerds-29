@@ -1,21 +1,18 @@
 .filter {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  padding-top: 26px;
-  padding-bottom: 32px;
-
+  padding: 26px 0px 32px;
 }
-/* Filter */
 .filter__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 -10px;
   padding: 0;
+  border: none;
 }
 .filter__item legend {
   padding-bottom: 25px;
+  font-weight: bold;
+  font-size: 16px;
 }
 .filter__item:nth-child(3) legend {
   padding-bottom: 15px;
@@ -38,6 +35,9 @@
   cursor: pointer;
   user-select: none; /* Свойство user-select определяет, может ли пользователь выбрать текст в элементе, для которого это свойство задано.*/
   padding-left: 39px;
+}
+.filter__item:nth-child(3) label {
+  padding-left: 0px;
 }
 .filter__input-checkbox + label::before {
   content: "";
