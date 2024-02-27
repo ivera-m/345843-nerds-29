@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Поиск гостиницы</title>
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/152.png"><!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <form method="get" action="https://echo.htmlacademy.ru" class="form-search">
+        <legend>ПОИСК ГОСТИНИЦЫ В седоне</legend>
+        <div class="form-search__grid">
+          <fieldset class="form-search__item">
+            <label for="check-in">Дата заезда:</label>
+            <input type="date" id="check-in">
+          </fieldset>
+          <fieldset class="form-search__item">
+            <label for="check-out">Дата выезда:</label>
+            <input type="date" id="check-out">
+          </fieldset>
+          <fieldset class="form-search__item">
+            <label for="adult">Взрослые:</label>
+            <input type="number" id="adult">
+          </fieldset>
+          <fieldset class="form-search__item">
+            <label for="child">Дети:</label>
+            <input type="number" id="child">
+          </fieldset>
+          <input class="btn btn-blue form-search__item" type="submit" value="Найти">
+      </div>
+    </form>
+  </body>
+</html>
