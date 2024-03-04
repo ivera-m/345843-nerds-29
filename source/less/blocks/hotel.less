@@ -1,0 +1,39 @@
+.hotel {
+  padding-bottom: 140px;
+}
+.hotel__block {
+  padding: 0;
+}
+.hotel__desc {
+  display: grid;
+  grid-template-columns: min-content 1fr max-content;
+  column-gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.hotel__desc--name {
+  padding-bottom: 5px;
+}
+.hotel__desc-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  & h3 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+.hotel__desc-price {
+  display: flex;
+  gap: 6px;
+}
+.hotel__desc-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.hotel__desc-rating--name {
+  background-color: @color-grey-light;
+  padding: 3px 12px 3px 15px;
+}

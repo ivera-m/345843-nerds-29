@@ -1,0 +1,54 @@
+.footer {
+  background-color: @color-white;
+  opacity: 0.9;
+  margin-top: -120px;
+  padding-top: 23px;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__item-tag {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: @color-black;
+  text-align: center;
+}
+.social__list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+}
+.social__button {
+  height: 46px;
+  width: 48px;
+  background-color: @color-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social__button:hover {
+  background-color: @color-blue-hover;
+  &:active {
+    background-color: @color-blue-click;
+  }
+}
+.social__button:active svg {
+  opacity: 0.2;
+}
+.footer__item-project {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.link__black {
+  &:hover path {
+    fill: @color-blue;
+  }
+  :active path {
+    fill: @color-grey-click;
+  }
+}
