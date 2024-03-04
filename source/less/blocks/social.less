@@ -4,11 +4,11 @@
   height: 48px;
   justify-content: flex-start;
   gap: 10px 6px;
-}
-.social ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  & ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
 }
 .social a {
   background-color: @color-blue;
@@ -18,17 +18,15 @@
   align-items: center;
   justify-content: center;
   line-height: 0;
-}
-.social a:hover {
-  background-color: @color-blue-hover;
-}
-.social a:active {
-  background-color: @color-blue-click;
+  margin: 0;
+  padding: 0;
+  &:hover {
+    background-color: @color-blue-hover;
+  }
+  &:active {
+    background-color: @color-blue-click;
+  }
 }
 .social-button:active path {
   fill: @color-white-dark-active;
-}
-.social a {
-  margin: 0;
-  padding: 0;
 }

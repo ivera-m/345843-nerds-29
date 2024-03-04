@@ -9,9 +9,9 @@
 .range-item {
   width: max-content;
   display: flex;
-}
-.range-item:nth-child(2) {
-  border: 1px solid @color-white;
+  &:nth-child(2) {
+    border: 1px solid @color-white;
+  }
 }
 input[type='text'] {
   margin-left: 5px;
@@ -19,12 +19,12 @@ input[type='text'] {
   border: none;
   background: none;
   width: 40px;
-}
-input[type='text']:focus {
-  margin-left: 3px;
-  outline: none;
-  border: 1px solid @color-white;
-  border-radius: 2px;
+  &:focus {
+    margin-left: 3px;
+    outline: none;
+    border: 1px solid @color-white;
+    border-radius: 2px;
+  }
 }
 input[type='range'] {
   width: 100%;

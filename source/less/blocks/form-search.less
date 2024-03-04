@@ -15,9 +15,9 @@
   background-color: @color-brown;
   color: @color-white;
   width: 100%;
-}
-.form-search legend:hover {
-  background-color: @color-brown-hover;
+  &:hover {
+    background-color: @color-brown-hover;
+  }
 }
 .form-search__grid {
   margin: 0;
@@ -32,18 +32,20 @@
   'btn btn'
   ;
 }
-.form-search__item:nth-child(1) {
-  grid-area: check-in;
-}
-.form-search__item:nth-child(2) {
-  grid-area: check-out;
-}
-.form-search__item:nth-child(3) {
-  grid-area: adult;
-}
-.form-search__item:nth-child(4) {
-  grid-area: child;
-}
-.form-search__item:nth-child(5) {
-  grid-area: btn;
+.form-search__item {
+  &:nth-child(1) {
+    grid-area: check-in;
+  }
+  &:nth-child(2) {
+    grid-area: check-out;
+  }
+  &:nth-child(3) {
+    grid-area: adult;
+  }
+  &:nth-child(4) {
+    grid-area: child;
+  }
+  &:nth-child(5) {
+    grid-area: btn;
+  }
 }
