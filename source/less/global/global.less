@@ -48,6 +48,12 @@ body {
   width: 1044px;
   margin: 0 auto;
   padding: 0 10px;
+  @media (max-width: 768px) {
+    width: 768px;
+  }
+  @media (max-width: 320px) {
+    width: 300px;
+  }
 }
 h2 {
   font-weight: 700;
@@ -55,12 +61,18 @@ h2 {
   line-height: 26px;
   color: @color-black;
   margin: 0;
+  @media (max-width: 320px) {
+    font-size: 18px;
+  }
 }
 h3 {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   margin: 0;
+  @media (max-width: 320px) {
+    font-size: 18px;
+  }
 }
 a {
   color: @color-black;
@@ -89,6 +101,13 @@ a:hover {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   text-align: center;
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+  @media (max-width: 320px) {
+    height: 350px;
+    background-image: url(../img/map-mobile.png);
+  }
 }
 
 .text-strong {
