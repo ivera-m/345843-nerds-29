@@ -1,0 +1,32 @@
+.head {
+  width: 100%;
+  z-index: 1;
+}
+.head__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  @media (max-width: 768px) {
+    justify-content: space-around;
+  }
+  &-item {
+    padding: 22px 0;
+  }
+  &-item .text-strong {
+    @media (max-width: 320px) {
+      display: none;
+    }
+  }
+  &-img {
+    padding: 0;
+    width: 186px;
+    height: 96px;
+    background-image: url(../img/logo-bg.svg);
+    background-size: 100% 100%;
+    text-align: center;
+    @media (max-width: 768px) {
+      background-image: none;
+      width: 102px;
+    }
+  }
+}

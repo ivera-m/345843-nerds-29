@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  height: 48px;
+  justify-content: flex-start;
+  gap: 10px 6px;
+  & ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+.social a {
+  background-color: @color-blue;
+  width: 46px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  &:hover {
+    background-color: @color-blue-hover;
+  }
+  &:active {
+    background-color: @color-blue-click;
+  }
+}
+.social-button:active path {
+  fill: @color-white-dark-active;
+}
